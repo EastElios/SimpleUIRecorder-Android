@@ -18,12 +18,10 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+        cache: 'gradle'
 
     - name: Setup Android SDK
-      uses: nttld/setup-ndk@v1
-      with:
-        ndk-version: r25c
-        local-cache: true
+      uses: android-actions/setup-android@v3
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
