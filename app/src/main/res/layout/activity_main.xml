@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回家自动化"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi名称（触发条件）"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/editSSID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="输入家庭WiFi名称"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="纬度"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="经度"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editLat"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="31.2304"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/editLng"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="121.4737"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal|numberSigned" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="启动自动化"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="测试自动化"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="快捷操作"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUU"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="UU远程"
+            android:backgroundTint="#FF9800"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnMijia"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="米家"
+            android:backgroundTint="#F44336"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="就绪"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#E8E8E8" />
+
+</LinearLayout>
